@@ -17,7 +17,7 @@ if [ $USERID -ne 0 ]; then
 fi
 
 mkdir -p LOGS_FOLDER
-echo "Script started executed at: $(date)"
+echo "Script started executed at: $(date)"  | tee -a $LOG_FILE
 
 VALIDATE(){
 
