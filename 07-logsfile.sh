@@ -22,10 +22,10 @@ echo "Script started executed at: $(date)"
 VALIDATE(){
 
   if [ $1 -ne 0]; then
-       echo  -e "Installing $2 ... $R failure $N" &>>$LOG_FILE
+       echo  -e "Installing $2 ... $R failure $N" 
        exit 1
   else   
-       echo -e "Installing $2 ...$G SUCCESS $N"   &>>$LOG_FILE
+       echo -e "Installing $2 ...$G SUCCESS $N"   
   fi     
 
 }
